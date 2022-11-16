@@ -3,6 +3,6 @@ void RecurNM(int i, int j)
 {
     if (j < i) return;
     RecurNM(i, j - 1);
-    Console.Write(j + " ");
+    Console.Write(j + "\n");
 }
 RecurNM(3, 11);
