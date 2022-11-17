@@ -17,4 +17,4 @@ int Akkerman(int i, int j)
         return Akkerman(i - 1,Akkerman(i, j - 1));
     }
 }
-Console.WriteLine(Akkerman(2, 3));
+Console.WriteLine(Akkerman(4, 3));
