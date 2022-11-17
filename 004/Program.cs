@@ -1,12 +1,12 @@
 ﻿// Написать программу возведения числа А в целую стень B
-int Stepen(int numberA, int numberB)
+int Stepen(int A, int B)
 {
-    if (numberB < 1) return 1;
-    return numberA * (Stepen(numberA, numberB - 1));
+    if (B < 1) return 1;
+    return A * (Stepen(A, B - 1));
 }
 
 Console.Write("Введите число A: ");
-int numberA = int.Parse(Console.ReadLine() ?? "0");
+int A = int.Parse(Console.ReadLine() ?? "0");
 Console.Write("Введите число B: ");
-int numberB = int.Parse(Console.ReadLine() ?? "0");
-Console.WriteLine($"Число {numberA} в степени {numberB} равно {Stepen(numberA, numberB)}");
+int B = int.Parse(Console.ReadLine() ?? "0");
+Console.WriteLine($"Число {A} в степени {B} равно {Stepen(A,B)}");
